@@ -9,7 +9,8 @@ and open the template in the editor.
 */
 
 body {
-    background: black;
+    background-image: url('http://i.imgur.com/xsoYuPe.png');
+    background-repeat: repeat;
     font-family: sans-serif;
     color: #dcdcdc;
 }
