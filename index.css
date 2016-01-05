@@ -14,6 +14,13 @@ body {
     font-family: sans-serif;
     color: #dcdcdc;
 }
+ /* Allineamento per accesso al sistema */
 .cl1 {
     text-align: right;
+}
+
+/* Allineamento per spostamento menù principale */
+
+.cl2 {
+    text-align: center;
 }
