@@ -24,4 +24,7 @@ body {
 
 .cl2 {
     text-align: center;
+    background-color: #0d0d0d;
+    border-bottom: 1px;
+    border-bottom-color: white;
 }
