@@ -8,3 +8,11 @@ and open the template in the editor.
     Author     : amm
 */
 
+body h1 {
+    background: black;
+    font-family: sans-serif;
+    color: #dcdcdc;
+}
+h1 {
+    float: right;
+}
