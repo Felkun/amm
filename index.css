@@ -9,11 +9,9 @@ and open the template in the editor.
 */
 
 body {
-    background-image: url('http://i.imgur.com/xsoYuPe.png');
-    background-repeat: repeat;
+    background-color: black;
     font-family: sans-serif;
     color: #dcdcdc;
-    
 }
  /* Allineamento per accesso al sistema */
 .cl1 {
@@ -27,6 +25,11 @@ body {
     background-color: #0d0d0d;
     border-bottom: 1px;
     border-bottom-color: white;
+}
+
+.cl3 {
+    background-image: url('http://i.imgur.com/xsoYuPe.png');
+    background-repeat: repeat;
 }
 
 page {
