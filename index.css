@@ -16,6 +16,8 @@ body {
  /* Allineamento per accesso al sistema */
 .cl1 {
     text-align: right;
+    background-image: url('http://i.imgur.com/xsoYuPe.png');
+    background-repeat: repeat;
 }
 
 /* Allineamento per spostamento menù principale */
@@ -24,7 +26,6 @@ body {
     text-align: center;
     background-color: #0d0d0d;
     border-bottom: 1px;
-    border-bottom-color: white;
 }
 
 .cl3 {
