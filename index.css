@@ -28,3 +28,9 @@ body {
     border-bottom: 1px;
     border-bottom-color: white;
 }
+
+page {
+    background-color: black;
+    font-family: sans-serif;
+    color: #dcdcdc;
+}
