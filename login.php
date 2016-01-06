@@ -14,7 +14,7 @@ and open the template in the editor.
         <script type="text/javascript" src="forms.js"></script>
         <?php
             if(isset($_GET['error'])) { 
-            echo 'Error Logging In!';
+            echo 'Errore di accesso: Controllare email e/o password';
             }
         ?>
         <form action="process_login.php" method="post" name="login_form">
