@@ -47,7 +47,5 @@ ul#menu {
 }
 
 span.menu {
-    position: relative;
-    top:      50%;
-    left:     50%;
+    text-align: center;
 }
