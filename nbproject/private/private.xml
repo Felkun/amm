@@ -3,15 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/amm/amm/index.html</file>
-            <file>file:/home/amm/amm/index.php</file>
-            <file>file:/home/amm/amm/db_connect.php</file>
-            <file>file:/home/amm/amm/functions.php</file>
-            <file>file:/home/amm/amm/process_login.php</file>
-            <file>file:/home/amm/amm/logout.php</file>
-            <file>file:/home/amm/amm/forms.js</file>
-            <file>file:/home/amm/amm/sha512.js</file>
-            <file>file:/home/amm/amm/login.php</file>
+            <file>file:/home/amm/development/amm/index.php</file>
+            <file>file:/home/amm/development/amm/connect_database.php</file>
         </group>
     </open-files>
 </project-private>
