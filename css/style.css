@@ -39,9 +39,13 @@ ul#menu {
     font-weight:     bold;
     height:          43px;
     width:           166px;
-    text-align:      center;
     text-decoration: none;
-}
+
+    
 #menu li a:hover, #menu li a.active {
     background: url('../img/act_button.png') no-repeat;
+}
+
+span.menu {
+    text-align: center;
 }
