@@ -1,5 +1,5 @@
 <head>
-<title>Simplest jQuery Slideshow</title>
+<title>Slideshow jQuery</title>
  
 <style>
 body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
