@@ -1,0 +1,16 @@
+/* 
+    Created on : 28-gen-2016, 19.45.11
+    Author     : gflor
+*/
+
+h1#logo {
+    margin-top:  20px;
+    margin-left: 15px;
+    background: url('/img/logo.png') no-repeat;
+}
+
+h1#logo a {
+    overflow:    hidden;
+    line-height: 9999em;
+    display:     block;
+}
