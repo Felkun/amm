@@ -5,7 +5,6 @@
 
 /* -- Header -- */
 #header{
-
     height: 100px;
 }
 
@@ -23,16 +22,23 @@ h1.logo a {
     display:     block;
 }
 
-ul#menu { list-style: none; margin-top: 60px; }
-#menu li { float: left; }
+ul#menu {
+    list-style: none;
+    margin-top: 50px;
+}
+
+#menu li {
+    float: left;
+}
+
 #menu li a {
-  color: white;
-  display:block;
-  font-weight: bold;
-  height: 40px;
-  line-height: 50px;
-  width: 100px;
-  text-align: center;
+  color:           black;
+  display:         block;
+  font-weight:     bold;
+  height:          40px;
+  line-height:     50px;
+  width:           100px;
+  text-align:      center;
   text-decoration: none;
 }
 #menu li a:hover, #menu li a.active {
