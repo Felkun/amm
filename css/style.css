@@ -3,14 +3,38 @@
     Author     : gflor
 */
 
-h1#logo {
-    margin-top:  20px;
-    margin-left: 15px;
-    background: url('/img/logo.png') no-repeat;
+/* -- Header -- */
+#header{
+
+    height: 100px;
 }
 
-h1#logo a {
+h1.logo{
+    background:  url('../img/logo.png') no-repeat;
+    margin-top:  20px;
+    margin-left: 15px;
+}
+
+h1.logo a {
+    height:      75px;
+    width:       315px;
     overflow:    hidden;
     line-height: 9999em;
     display:     block;
+}
+
+ul#menu { list-style: none; margin-top: 60px; }
+#menu li { float: left; }
+#menu li a {
+  color: white;
+  display:block;
+  font-weight: bold;
+  height: 40px;
+  line-height: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+#menu li a:hover, #menu li a.active {
+  background-color: #F58529;
 }
