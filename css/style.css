@@ -6,6 +6,7 @@
 /* -- Header -- */
 #header{
     height: 100px;
+    background-color: black;
 }
 
 h1.logo{
@@ -32,15 +33,16 @@ ul#menu {
 }
 
 #menu li a {
-  color:           black;
-  display:         block;
-  font-weight:     bold;
-  height:          40px;
-  line-height:     50px;
-  width:           100px;
-  text-align:      center;
-  text-decoration: none;
+    background:      url('../img/button.png') no-repeat;
+    color:           white;
+    display:         block;
+    font-weight:     bold;
+    height:          43px;
+    line-height:     50px;
+    width:           166px;
+    text-align:      center;
+    text-decoration: none;
 }
 #menu li a:hover, #menu li a.active {
-  background-color: #F58529;
+  
 }
