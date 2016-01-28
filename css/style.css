@@ -39,8 +39,7 @@ ul#menu {
     font-weight:     bold;
     height:          43px;
     width:           166px;
-    top:             50%;
-    left:            50%;
+    text-align:      center;
     text-decoration: none;
 }
 #menu li a:hover, #menu li a.active {
