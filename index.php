@@ -15,9 +15,10 @@
         
         <ul id="menu">
             <li><a class="active" href="index.php">Home</a></li>
-            <li><a href="showcategories.php">La Serie</a></li>
-            <li><a href="carrello.php">La Storia</a></li>
-            <li><a href="info.php">Shop</a></li>
+            <li><a href="series.php">La Serie</a></li>
+            <li><a href="story.php">La Storia</a></li>
+            <li><a href="gameplay.php">Gameplay</a></li>
+            <li><a href="shop.php">Shop</a></li>
         </ul>
         </div>
         
