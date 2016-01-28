@@ -41,9 +41,8 @@ ul#menu {
     line-height:     50px;
     width:           166px;
     text-align:      center;
-    text-height:     40px;
     text-decoration: none;
 }
 #menu li a:hover, #menu li a.active {
-  
+    background: url('../img/act_button.png') no-repeat;
 }
