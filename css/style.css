@@ -33,13 +33,14 @@ ul#menu {
 }
 
 #menu li a {
-    background:      url('../img/button.png') no-repeat;
+    background:  url('../img/button.png') no-repeat;
     color:           white;
     display:         block;
     font-weight:     bold;
+    text-align:      center;
+    text-decoration: none;
     height:          43px;
     width:           166px;
-    text-decoration: none;
 }
     
 #menu li a:hover, #menu li a.active {
@@ -47,7 +48,10 @@ ul#menu {
 }
 
 span.menu {
-    position: relative;
-    top:      25%;
-    left:     25%;
+    line-height: 2.5em;
+}
+
+.youtube {
+    float: center;
+    alignment-adjust: central;
 }

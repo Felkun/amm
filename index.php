@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
         <title>Metroid Prime - Home</title>
     </head>
-    <body>
+    <header>
         <div id="header">
             <h1 class="logo"><a href="index.php">Metroid Prime Website</a></h1>
         
@@ -20,10 +20,12 @@
             <li><a href="gameplay.php"><span class="menu">Gameplay</span></a></li>
             <li><a href="shop.php"><span class="menu">Shop</span></a></li>
         </ul>
-        </div>
-        
-        <?php
-        // put your code here
-        ?>
+        </div><br><br><br>
+    </header>
+    <body>
+        <div><iframe class="youtube" width="560" height="315" position="center" src="https://www.youtube.com/embed/MSKA639wMSc" frameborder="0" allowfullscreen></iframe></div>
     </body>
+    <footer>
+        
+    </footer>
 </html>
