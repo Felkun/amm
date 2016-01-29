@@ -26,18 +26,6 @@
     <body>
         <br/><br/><br/>
         <div><center><iframe width="560" height="315" src="https://www.youtube.com/embed/MSKA639wMSc" frameborder="0" allowfullscreen></iframe></center></div>
-        
-        <?php
-    include("slideshow.php");
-?>
-<div class="fadein">
-<img src="http://chictraveler.wpengine.netdna-cdn.com/wp-content/uploads/2010/09/Picture-91-500x332.png">
-<img src="http://sevillespain.info/wp-content/uploads/2012/02/Casa-De-Carmona-Hotel-Seville-casa_de_carmona_galeria_mr_1200-500x332.jpg">
-<img src="http://hereelsewhere.com/wp-content/uploads/2012/06/Chambre22-500x332.jpeg">
-<img src="http://www.worlddesignhotels.com/wp-content/uploads/407/X%20Ordinary%20Room-500x332.jpg">
-<img src="http://armywife101.com/wp-content/uploads/2012/09/DoubleTree-Suites-by-Hilton-exterior-photo-Downtown-Disney-Resort-Area-Hotels-500x332.jpg">
-</div>
-    </body>
     <footer>
         <p>Copyright 2002-2016 Nintendo</p>
     </footer>
