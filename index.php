@@ -27,6 +27,6 @@
         <div><center><iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/MSKA639wMSc" frameborder="0" allowfullscreen></iframe></center></div>
     </body>
     <footer>
-        
+        <p>Copyright 2002-2016 Nintendo</p>
     </footer>
 </html>
