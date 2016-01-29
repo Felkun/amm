@@ -4,11 +4,11 @@
 */
 
 /* -- Header -- */
-/*#header{
+#header{
     height: 100px;
-}*/
+}
 
-header{
+body{
     background-color: black;
 }
 
