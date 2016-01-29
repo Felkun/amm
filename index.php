@@ -20,10 +20,10 @@
             <li><a href="series.php"><span class="menu">La Serie</span></a></li>
             <li><a class="active" href="index.php"><span class="menu">Home</span></a></li>
         </ul>
-        </div><br><br><br>
+        </div>
     </header>
     <body>
-        <div><iframe class="youtube" width="560" height="315" position="center" src="https://www.youtube.com/embed/MSKA639wMSc" frameborder="0" allowfullscreen></iframe></div>
+        <div><center></center><iframe class="youtube" width="560" height="315" position="center" src="https://www.youtube.com/embed/MSKA639wMSc" frameborder="0" allowfullscreen></iframe></center></div>
     </body>
     <footer>
         
