@@ -58,3 +58,9 @@ span.menu {
     float: center;
     alignment-adjust: central;
 }
+
+footer {
+    text-color: white;
+    position:   fixed;
+    bottom:     0px;
+}
