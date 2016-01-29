@@ -10,6 +10,7 @@
         <title>Metroid Prime - Home</title>
     </head>
     <header>
+        <!-- http://www.extrowebsite.com/articoli-e-guide-css/193-css-posizionare-due-div-opposti-sulla-stessa-riga-con-la-proprieta-float -->
         <div id="header">
             <h1 class="logo"><a href="index.php">Metroid Prime Website</a></h1>
         
