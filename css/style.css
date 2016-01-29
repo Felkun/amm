@@ -29,7 +29,7 @@ ul#menu {
 }
 
 #menu li {
-    float: left;
+    float: right;
 }
 
 #menu li a {
