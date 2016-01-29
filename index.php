@@ -23,7 +23,7 @@
         </div>
     </header>
     <body>
-        <div><center></center><iframe class="youtube" width="560" height="315" position="center" src="https://www.youtube.com/embed/MSKA639wMSc" frameborder="0" allowfullscreen></iframe></center></div>
+        <div><center><iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/MSKA639wMSc" frameborder="0" allowfullscreen></iframe></center></div>
     </body>
     <footer>
         
