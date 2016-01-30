@@ -57,6 +57,6 @@ span.menu {
 
 footer {
     color:    white;
-    position: fixed;
+    position: absolute;
     bottom:   0px;
 }
