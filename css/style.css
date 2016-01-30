@@ -4,12 +4,20 @@
 */
 
 /* -- Header -- */
+/*html{
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
 #header{
     height: 100px;
 }
 
 body{
-    background-color: black;
+    background: url('../img/background.png');
 }
 
 h1.logo{
@@ -30,7 +38,7 @@ h1.logo a {
 ul#menu {
     float:         right;
     list-style:    none;
-    margin-top:    50px;
+    margin-top:    55px;
     margin-bottom: 20px;
 }
 
