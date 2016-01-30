@@ -28,12 +28,13 @@ h1.logo a {
 }
 
 ul#menu {
-    list-style: none;
+    float:         right;
+    list-style:    none;
     margin-bottom: 20px;
 }
 
 #menu li {
-    float: right;
+    float: left;
 }
 
 #menu li a {
