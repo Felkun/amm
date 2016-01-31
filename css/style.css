@@ -3,33 +3,46 @@
     Author     : gflor
 */
 
-/* -- Header -- */
-/*html{
-    background: url('../img/background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}*/
-
-html, body {
+html, body{
     margin:      0; 
     padding:     0;
     font-family: "Trebuchet MS", Georgia, Arial, sans-serif; 
     font-size:   100%;> 
     text-align:  center;
+    height: 100%;
 }
 
-header, footer{
+#container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px;
+}
+
+#header, #footer{
     background: black;
+}
+
+body{
+    background: url('../media/background.png');
+}
+
+#body{
+    clear: both;
 }
 
 #header{
     height: 100px;
 }
 
-body{
-    background: url('../media/background.png');
+#footer {
+    color:  white;
+    bottom: 0px;
+}
+
+#footer, #push {
+    height: 50px;
+    clear: both;
 }
 
 h1.logo{
@@ -78,9 +91,3 @@ span.menu {
     line-height: 2.5em;
 }
 
-footer {
-    color:      white;
-    bottom:     0px;
-    position:   absolute;
-    margin:     20px;
-}

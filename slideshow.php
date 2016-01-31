@@ -1,23 +1,17 @@
 <head>
-<title>Slideshow jQuery</title>
- 
-<style>
-body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
- 
-.fadein { 
-position:relative; height:332px; width:500px; margin:0 auto;
-background: url("slideshow-bg.png") repeat-x scroll left top transparent;
-padding: 10px;
- }
-.fadein img { position:absolute; left:10px; top:10px; }
-</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>
-$(function(){
-    $('.fadein img:gt(0)').hide();
-    setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
-});
-</script>
+    <title>Slideshow</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Giorgio Floris">
+    <style type="text/css">/</style>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slideshow.css" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.fadein img:gt(0)').hide();
+            setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
+        });
+    </script>
 </head>
 
 <!-- Codice di esempio per generare gli slideshow -->
