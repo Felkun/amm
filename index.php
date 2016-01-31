@@ -26,7 +26,7 @@
             </div>
             <div id="body">
                 
-                <div><center><video width="560" height="315" autoplay="none" preload="(none,auto,metadata)" poster="Tua immagine.jpg" controls="controls" loop="loop">
+                <div><center><video id='blueborder' width="560" height="315" autoplay="none" preload="(none,auto,metadata)" poster="Tua immagine.jpg" controls="controls" loop="loop">
                     <source src="media/mpt_trailer.webm" type="video/mp4" />
                 </video></center></div>
             </div>

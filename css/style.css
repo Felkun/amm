@@ -94,3 +94,7 @@ ul#menu {
 span.menu {
     line-height: 2.5em;
 }
+
+#blueborder{
+    border: 1px solid #003366;
+}
