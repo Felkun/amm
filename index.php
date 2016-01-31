@@ -26,7 +26,9 @@
     </header>
     <body>
         <br/><br/><br/>
-        <div><center><iframe width="560" height="315" src="https://www.youtube.com/embed/MSKA639wMSc" frameborder="0" allowfullscreen></iframe></center></div>
+        <div><center><video width="560" height="315" autoplay="autoplay" preload="(none,auto,metadata)" poster="Tua immagine.jpg" controls="controls" loop="loop">
+            <source src="media/mpt_trailer.webm" type="video/mp4" />
+        </video></center></div>
     <footer>
         <div style="float:left; clear:both;">Copyright &#169; 2002-2016 Nintendo</div>
         <div style="float:right; clear:both;">All Rights Reserved</div> 
