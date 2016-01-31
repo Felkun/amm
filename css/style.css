@@ -20,7 +20,9 @@ html, body {
     text-align:  center;
 }
 
-
+header, footer{
+    background: black;
+}
 
 #header{
     height: 100px;
