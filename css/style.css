@@ -33,15 +33,19 @@ body{
 
 #header{
     height: 100px;
+    border-style: solid;
+    border-bottom: 1px solid #003366;
 }
 
 #footer {
-    color:  white;
-    bottom: 0px;
+    color:       white;
+    bottom:      0px;
+    line-height: 2.5em;
+    border-top:  1px solid #003366;
 }
 
 #footer, #push {
-    height: 50px;
+    height: 49px;
     clear: both;
 }
 
@@ -73,7 +77,7 @@ ul#menu {
 }
 
 #menu li a {
-    background:  url('../media/button.png') no-repeat;
+    background:      url('../media/button.png') no-repeat;
     color:           white;
     display:         block;
     font-weight:     bold;
@@ -90,4 +94,3 @@ ul#menu {
 span.menu {
     line-height: 2.5em;
 }
-
