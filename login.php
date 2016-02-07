@@ -1,50 +1,33 @@
 <?php
-// prelevo username e password dal POST,
-// eliminando eventuali spazi alle estremità delle stringhe
-$username = trim($_POST['username']);
-$password = trim($_POST['password']);
-
-// elimino eventuali backslash inseriti automaticamente da PHP
-if(get_magic_quotes_gpc())
-{
-	$username = stripslashes($username);
-	$password = stripslashes($password);
+session_start(); 
+$connessione=mysql_connect("localhost","root","");
+  if(!$connessione)
+  {
+	print("<H1>connessione al server MySQL fallita</H1>");
+	exit;
+  }
+  $DB = mysql_select_DB("Bubishop");
+  if(!$DB)
+  {
+	print("<H1>connessione al database negozio fallita</H1>");
+	exit;  
+  }
+  //Controlli aggiuntivi
+  if((strlen($_POST['password'])>6) && (strlen($_POST['username'])>=5)) {
+  //Fine controlli, perform query
+  $Sql="SELECT password FROM cliente where username='".$_POST['username']."' and password='".$_POST['password']."'";
+  $result = mysql_query($Sql);
+  $Results=mysql_num_rows($result);
+  if($Results==0) {
+	 $_SESSION['accessonegato']=1; header("Location: index.php"); }
+  else {
+  $_SESSION['username']=$_POST['username']; unset($_SESSION['controllologin']); unset($_SESSION['numerr']);
+ if((isset($_SESSION['redirect'])==1) && ($_SESSION['redirect']==2)) { unset($_SESSION['redirect']); header("Location: carrello.php"); unset($_SESSION['controllologin']); unset($_SESSION['numerr']); }
+ else	header("Location: index.php");
+  }
 }
-
-// Converto in ISO-8859-1 i caratteri provenienti
-// dal client, codificati di default in UTF8
-$username = utf8_decode($username);
-$password = utf8_decode($password);
-
-// provo ad effettuare il login con i dati recuperati dal form
-$esito = login($_POST['username'],$_POST['password']);
-
-// converto in UTF8 la risposta restituita dalla funzione login()
-$esito = utf8_encode($esito);
-
-// invio la risposta al client
-echo $esito;
-
-// funzione per la verifica dei dati di login
-function login($username, $password)
-{
-    $username_corretto = "ivan";
-    $password_corretta = "segreto";
-
-    if(!$username || !$password) {
-        return 3;
-    }
-
-    if($username != $username_corretto) {
-        return 1;
-    }
-
-    if($username == $username_corretto && $password != $password_corretta) {
-        return 2;
-    }
-
-    if($username == $username_corretto && $password == $password_corretta) {
-        return 4;
-    }
+else {
+ $_SESSION['accessonegato']=1; header("Location: index.php"); 
 }
+  mysql_close($connessione);
 ?>

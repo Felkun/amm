@@ -1,0 +1,36 @@
+/*stili per il layout fisso con background*/
+html,body{margin: 0;padding:0}
+body{font-family: arial,sans-serif;font-size: 76%;text-align:center}
+div#container{width:760px; margin:0 auto;
+        border-width: 0 1px; border-style:solid; border-color: #ccc;
+        background: url(3rightcol.jpg) repeat-y top right}
+div#container2{background: url(3leftcol.jpg) repeat-y top left;text-align: left}
+/*stili generici, su header e footer*/
+div#header{height: 80px;background-color:#36C;color: #ff0}
+div#footer a{color:#fff;font-weight: bold;text-decoration: underline}
+
+/*stili specifici per il layout*/
+div#navigation{float: left;width: 160px;\width:170px;w\idth:160px;padding: 1em 0 0 10px}
+div#extra{float: right; width: 160px;\width:170px;w\idth:160px;padding: 1em 5px}
+div#content{margin: 0 170px;padding: 1em 10px}
+div#footer{clear:both; text-align:center; padding: 5px 0;
+    background-color: #69c; color: #000}
+
+/*stili per la navigazione*/
+div#navigation ul{margin: 0;padding: 0; list-style-type: none}
+div#navigation li{margin: 0;padding: 0}
+div#navigation a{color:#369;font: normal bold 1.2em/1.4em arial,sans-serif;text-decoration: none}
+div#navigation a:hover{color: #033;text-decoration: underline}
+div#navigation a#activelink{color: #033;text-decoration: none}
+div#navigation p{font-size: 90%}
+
+/*stili per la sezione extra*/
+div#extra{font-size: 90%;margin-bottom: 2em}
+div#extra h2{color: #999;font-size: 1.2em}
+div#extra p{margin: 0}
+
+html,body{margin:0; padding: 0;height: 100%}
+div#container{position: relative; height:100%}
+body>div#container{height: auto; min-height: 100%}
+
+div#footer{position:absolute;bottom: 0;width: 100%} 

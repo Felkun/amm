@@ -29,6 +29,9 @@ body{
 
 #body{
     clear: both;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #header{

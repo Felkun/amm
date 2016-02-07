@@ -4,17 +4,10 @@ if(isset($_SESSION['username'])==0)
 	$_SESSION['username']="GUEST";
 
 	//Connessione MySQL
-$connessione=mysql_connect("localhost","root","davide");
+$connessione=mysqli_connect("localhost","root","davide","metroid");
   if(!$connessione)
   {
-	print("<H1>connessione al server MySQL fallita</H1>");
+	print("<H1>connessione al server fallita</H1>");
 	exit;
   }
-  $DB = mysql_select_DB("metroid");
-  if(!$DB)
-  {
-	print("<H1>connessione al database negozio fallita</H1>");
-	exit;  
-  }
-	
 ?>
