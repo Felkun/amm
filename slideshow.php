@@ -14,10 +14,9 @@
     </script>
 </head>
 
-<!-- Codice di esempio per generare gli slideshow -->
 <!-- <body>
 <?php
-    //include("slideshow.php");
+    include("slideshow.php");
 ?>
 <div class="fadein">
 <img src="http://chictraveler.wpengine.netdna-cdn.com/wp-content/uploads/2010/09/Picture-91-500x332.png">
