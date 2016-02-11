@@ -1,6 +1,6 @@
 <!-- Connessione al database -->
 <?php
-    //include("connect.php");
+    include("connect.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,13 +24,20 @@
                 </ul>
             </div>
             <div id="body">
-                <div id="login"> Parte per il log-in </div>
+                <div id="login">
+                    <?php if($_SESSION['username']=="GUEST") {
+                        print("<div>Benvenuto! - <a href=\"login.php\">Log-in</a></div>");
+                    } else print("<div>$username - <a href=\"logout.php\">Log-out</div>");
+                    ?>
+                </div>
+                <br /><br />
+                <div id="contenuto">
                 <div><center><video id='blueborder' width="560" height="315" autoplay="autoplay" preload="metadata" controls="controls">
                     <source src="media/mpt_trailer.webm" type="video/mp4" />
                 </video>
                     <br/><br/>
                         <img src=""><br/><h3>ORA DISPONIBILE</h3></center></div>
-            </div>
+                </div></div>
             
             <div id="push"></div>
             

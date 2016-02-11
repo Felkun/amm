@@ -3,18 +3,11 @@
     <meta charset="UTF-8">
     <meta name="author" content="Giorgio Floris">
     <style type="text/css">/</style>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/slideshow.css" />
+    
     <link rel="shortcut icon" href="favicon.ico">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            $('.fadein img:gt(0)').hide();
-            setInterval(function(){$('.fadein > :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
-        });
-    </script>
 </head>
 
-<!-- <body>
+<!--<body>
 <?php
     include("slideshow.php");
 ?>
@@ -25,4 +18,4 @@
 <img src="http://www.worlddesignhotels.com/wp-content/uploads/407/X%20Ordinary%20Room-500x332.jpg">
 <img src="http://armywife101.com/wp-content/uploads/2012/09/DoubleTree-Suites-by-Hilton-exterior-photo-Downtown-Disney-Resort-Area-Hotels-500x332.jpg">
 </div>
-</body> -->
+</body>-->
