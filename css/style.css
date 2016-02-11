@@ -32,6 +32,12 @@ body{
     color:         white;
 }
 
+#position{
+    clear: both;
+    content: "";
+    display: table;
+}
+
 #contenuto{
     padding-left:  10%;
     padding-right: 10%;
