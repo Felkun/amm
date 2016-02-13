@@ -25,9 +25,13 @@
             </div>
             <div id="body">
                 <div id="login">
-                    <?php if($_SESSION['username']=="GUEST") {
-                        print("<div>Benvenuto! - <a href=\"login.php\">Log-in</a></div>");
-                    } else print("<div>$username - <a href=\"logout.php\">Log-out</div>");
+                    <?php if($_SESSION['user']=="GUEST") {
+                        print("Benvenuto! - <a href=\"login.php\">Log-in</a>");
+                    } else {
+                        print("Bentornato ");
+                        echo$_SESSION['user'];
+                        print("! - <a href=\"logout.php\">Log-out</a>");
+                    }
                     ?>
                 </div>
                 <br /><br />

@@ -1,19 +1,17 @@
-<?php 
-session_start();
-if(isset($_SESSION['username'])==0) 
-	$_SESSION['username']="GUEST";
+<?php
+// blocco dei parametri di connessione
+// host, username, password e db
+$host = "localhost";
+$user = "root";
+$password = "davide";
+$db = "metroid";
 
-	//Connessione al database
-  $connessione=mysql_connect("localhost","root","davide");
-  if(!$connessione)
-  {
-	print("<H1>connessione al server fallita</H1>");
-	exit;
-  }
-  $DB = mysql_select_DB("metroid");
-  if(!$DB)
-  {
-	print("<H1>Connessione al database fallita</H1>");
-	exit;  
-  }
+# stringa di connessione al DBMS
+$connessione = new mysqli($host, $user, $password, $db);
+
+// verifica su eventuali errori di connessione
+if ($connessione->connect_errno) {
+    echo "Connessione fallita: ". $connessione->connect_error . ".";
+    exit();
+}
 ?>
