@@ -25,11 +25,11 @@
             </div>
             <div id="body">
                 <div id="login">
-                    <?php if($_SESSION['user']=="GUEST") {
+                    <?php if($_SESSION['username']=="GUEST") {
                         print("Benvenuto! - <a href=\"login.php\">Log-in</a>");
                     } else {
                         print("Bentornato ");
-                        echo$_SESSION['user'];
+                        echo$_SESSION['username'];
                         print("! - <a href=\"logout.php\">Log-out</a>");
                     }
                     ?>
@@ -37,7 +37,7 @@
                 <br /><br />
                 <div id="contenuto">
                 <div><center><video id='blueborder' width="560" height="315" autoplay="autoplay" preload="metadata" controls="controls">
-                    <source src="media/mpt_trailer.webm" type="video/mp4" />
+                    <source src="media/mpt_trailer.webm" type="video/webm" />
                 </video>
                     <br/><br/>
                         <img src=""><br/><h3>ORA DISPONIBILE</h3></center></div>
