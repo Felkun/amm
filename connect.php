@@ -6,8 +6,8 @@
     }
 
     //Connessione MySQL
-    $connessione=mysql_connect("localhost","root","davide");
-/*    $connessione=mysql_connect("amm15_florisGiorgio","florisGiorgio","pavone8710");*/
+/*    $connessione=mysql_connect("localhost","root","davide");*/
+    $connessione=mysql_connect("amm15_florisGiorgio","florisGiorgio","pavone8710");
     if(!$connessione) {
         print("connessione al server fallita");
         exit;
