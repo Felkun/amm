@@ -1,7 +1,9 @@
 <?php 
     session_start();
-    if(isset($_SESSION['username'])==0) 
+    if(isset($_SESSION['username'])==0) {
         $_SESSION['username']="GUEST";
+        $_SESSION['newser']=false;   
+    }
 
     //Connessione MySQL
     $connessione=mysql_connect("localhost","root","davide");
