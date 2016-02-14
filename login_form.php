@@ -7,10 +7,17 @@
     $result = mysql_query($Sql);
     $Results=mysql_num_rows($result);
         if($Results==0) {
-            $_SESSION['accessonegato']=1; header("Location: login.php");
+            $_SESSION['accessonegato']=1;
+            header("Location: login.php");
         } else {
-            $_SESSION['username']=$_POST['username']; unset($_SESSION['controllologin']); unset($_SESSION['numerr']);
-            if((isset($_SESSION['redirect'])==1) && ($_SESSION['redirect']==2)) { unset($_SESSION['redirect']); header("Location: index.php"); unset($_SESSION['controllologin']); unset($_SESSION['numerr']);
+            $_SESSION['username']=$_POST['username'];
+            unset($_SESSION['controllologin']);
+            unset($_SESSION['numerr']);
+            if((isset($_SESSION['redirect'])==1) && ($_SESSION['redirect']==2)) {
+                unset($_SESSION['redirect']);
+                header("Location: index.php");
+                unset($_SESSION['controllologin']);
+                unset($_SESSION['numerr']);
             }
         }
     } else {

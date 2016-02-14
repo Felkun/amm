@@ -21,13 +21,12 @@
                     <li><a href="series.php"><span class="menu">La Serie</span></a></li>
                     <li><a href="story.php"><span class="menu">La Storia</span></a></li>
                     <li><a href="gameplay.php"><span class="menu">Gameplay</span></a></li>
-                    <li><a href="shop.php"><span class="menu">Shop</span></a></li>
                 </ul>
             </div>
             <div id="body">
                 <div id="contenuto">
 <?php
-    if($_SESSION['newser']==true){
+    if($_SESSION['newser']=="1"){
         ?>
     <h1>Inserisci un articolo</h1>
     <?php
@@ -44,7 +43,7 @@
         }
 
         // popoliamo i campi della tabella articoli con i dati ricevuti dal form
-        $sql = "INSERT INTO tbl_articoli (art_autore, art_titolo, art_articolo, art_data) VALUES ('$autore', '$titolo', '$articolo', now())";
+        $sql = "INSERT INTO tbl_articoli (art_autore, art_titolo, art_articolo, art_data) VALUES ('$username', '$titolo', '$articolo', now())";
 
         // se l'inserimento ha avuto successo inviamo una notifica
         if (@mysql_query($sql) or die (mysql_error())){

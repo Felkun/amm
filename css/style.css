@@ -61,6 +61,16 @@ body{
     clear: both;
 }
 
+#news{
+    float:         left;
+    border-bottom: 1px solid #003366;
+    border-right:  1px solid #003366;
+    border-left:   0;
+    border-top:    0;
+    background:    #333;
+    color:         white;
+}
+
 #login{
     float:         right;
     border-bottom: 1px solid #003366;
@@ -69,7 +79,6 @@ body{
     border-top:    0;
     background:    #333;
     color:         white;
-    clear:         both;
 }
 
 h1.logo{

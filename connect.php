@@ -2,12 +2,12 @@
     session_start();
     if(isset($_SESSION['username'])==0) {
         $_SESSION['username']="GUEST";
-        $_SESSION['newser']=false;   
+        $_SESSION['newser']="0";   
     }
 
     //Connessione MySQL
-/*    $connessione=mysql_connect("localhost","root","davide");*/
-    $connessione=mysql_connect("localhost","florisGiorgio","pavone8710");
+    $connessione=mysql_connect("localhost","root","davide");
+/*    $connessione=mysql_connect("localhost","florisGiorgio","pavone8710");*/
     if(!$connessione) {
         print("connessione al server fallita");
         exit;

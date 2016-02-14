@@ -19,7 +19,6 @@
                 <li><a href="series.php"><span class="menu">La Serie</span></a></li>
                 <li><a href="story.php"><span class="menu">La Storia</span></a></li>
                 <li><a href="gameplay.php"><span class="menu">Gameplay</span></a></li>
-                <li><a href="shop.php"><span class="menu">Shop</span></a></li>
             </ul>
         </div>
         <div id="body">
@@ -30,10 +29,14 @@
     print("<li><INPUT TYPE=\"Text\" NAME=\"username\"></li>");
     print("<li>Password</li>");
     print("<li><INPUT TYPE=\"Password\" NAME=\"password\"></li>");
-    print("<BR>");
+    print("<br />");
     print("<li><INPUT id=\"pulsante\" TYPE=Submit VALUE=\"Log In\"></li>");
+    print("<br />");
     print("<li>Non sei registrato? <a href=\"registrazione.php\">Registrati!</a></li>");
-    if(isset($_SESSION['accessonegato'])==1) { print("<li><h1>Non hai inserito dati di accesso corretti!</h1></li>"); unset($_SESSION['accessonegato']); }
+    if(isset($_SESSION['accessonegato'])==1) {
+        print("<li><h1>Non hai inserito dati di accesso corretti!</h1></li>");
+        unset($_SESSION['accessonegato']);
+    }
     print("</ul>");
     print("</FORM>");
 ?>	

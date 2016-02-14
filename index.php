@@ -20,10 +20,14 @@
                     <li><a href="series.php"><span class="menu">La Serie</span></a></li>
                     <li><a href="story.php"><span class="menu">La Storia</span></a></li>
                     <li><a href="gameplay.php"><span class="menu">Gameplay</span></a></li>
-                    <li><a href="shop.php"><span class="menu">Shop</span></a></li>
                 </ul>
             </div>
             <div id="body">
+                <div id="news">
+                    <?php if($_SESSION['newser']=="1")
+                        print("<a style=\"float: right;\" href=\"news.php\">Area News</a>");
+                    ?>
+                </div>
                 <div id="login">
                     <?php if($_SESSION['username']=="GUEST") {
                         print("Benvenuto! - <a href=\"login.php\">Log-in</a>");
@@ -93,10 +97,6 @@
             
         </div>  
     <div id="footer">
-        <center><div>Copyright &#169; 2002-2016 Nintendo</div>
-        <?php if($_SESSION['newser']==true) {
-            print("<a href=\"login.php\">Accedi all'area di pubblicazione delle news News</a>");
-        }
-        ?></center>
+        <div><center>Copyright &#169; 2002-2016 Nintendo</center></div>
     </div>
 </html>

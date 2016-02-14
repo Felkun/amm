@@ -15,7 +15,7 @@
         <script>
             $(function(){
                 $('.fadein img:gt(0)').hide();
-                setInterval(function(){$('.fadein > :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
+                setInterval(function(){$('.fadein > :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 4000);
             });
         </script>
     </head>
@@ -28,7 +28,6 @@
                     <li><a href="series.php"><span class="menu">La Serie</span></a></li>
                     <li><a class="active" href="story.php"><span class="menu">La Storia</span></a></li>
                     <li><a href="gameplay.php"><span class="menu">Gameplay</span></a></li>
-                    <li><a href="shop.php"><span class="menu">Shop</span></a></li>
                 </ul>
             </div>
             <div id="body">
