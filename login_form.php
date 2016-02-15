@@ -1,29 +1,34 @@
 <?php
     include("connect.php");
-    //Controlli aggiuntivi
-    if((strlen($_POST['password'])>5) && (strlen($_POST['username'])>=5)) {
-    //Fine controlli, perform query
-    $Sql="SELECT password FROM tbl_utenti where username='".$_POST['username']."' and password='".$_POST['password']."'";
-    $result = mysql_query($Sql);
-    $Results=mysql_num_rows($result);
-        if($Results==0) {
-            $_SESSION['accessonegato']=1;
-            header("Location: login.php");
-        } else {
-            $_SESSION['username']=$_POST['username'];
-            unset($_SESSION['controllologin']);
-            unset($_SESSION['numerr']);
-            if((isset($_SESSION['redirect'])==1) && ($_SESSION['redirect']==2)) {
-                unset($_SESSION['redirect']);
-                header("Location: index.php");
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+    //Controlli
+    if((strlen($password)>5) && (strlen($username)>=5)) {
+        //Query
+        $Sql="SELECT password, newser FROM tbl_utenti where username='".$username."' and password='".$password."'";
+        $result = mysql_query($Sql);
+        $Results=mysql_num_rows($result);
+            if($Results==0) {
+                $_SESSION['accessonegato']=1;
+                header("Location: login.php");
+            } else {
+                $_SESSION['username']=$username;
                 unset($_SESSION['controllologin']);
                 unset($_SESSION['numerr']);
+                if((isset($_SESSION['redirect'])==1) && ($_SESSION['redirect']==2)) {
+                    unset($_SESSION['redirect']);
+                    header("Location: index.php");
+                    unset($_SESSION['controllologin']);
+                    unset($_SESSION['numerr']);
+                }
             }
-        }
     } else {
         $_SESSION['accessonegato']=1;
         header("Location: login.php");
     }
-    header("Location: index.php");
+    if ($_SESSION['accessonegato']==0) {
+        header("Location: index.php");
+        $_SESSION['newser']=mysql_result($result,0,"newser");
+    }
     mysql_close($connessione);
 ?>

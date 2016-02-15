@@ -24,8 +24,9 @@
             </div>
             <div id="body">
                 <div id="news">
-                    <?php if($_SESSION['newser']=="1")
+                    <?php if($_SESSION['newser']==TRUE) {
                         print("<a style=\"float: right;\" href=\"news.php\">Area News</a>");
+                    }
                     ?>
                 </div>
                 <div id="login">
@@ -62,29 +63,28 @@
                             $articolo = stripslashes($row['art_articolo']);
    
                             //valorizziamo una variabili con il link all'intero articolo
-                            $link = " ..<br><a href=\"articolo.php?id=$art_id\">Leggi tutto</a>";
+                            $continua = "...";
 
                             echo "<h2>".$titolo."</h2>";
    
-                             // creiamo l'anteprima che mostra le prime 30 parole di ogni singolo articolo
-                             // per farlo utilizzo una funzione che vi presenterò più avanti
-                            echo @anteprima($articolo, 30, $link); 
-                            echo "<br><br>";
+                            // Anteprima di ogni singolo articolo
+                            echo preview($articolo, 40, $continua); 
+                            echo "<br /><br />";
    
                             // formattiamo la data nel formato europeo
                             $data = preg_replace('/^(.{4})-(.{2})-(.{2})$/','$3-$2-$1', $data);
 
                             // stampiamo una serie di informazioni
                             echo  "Scritto da <b>". $autore . "</b>";
-                            echo  "| Articolo postato il <b>" . $data . "</b>";
-                            echo  "| Commenti: "; 
+                            echo  " | Articolo postato il <b>" . $data . "</b>";
+                            echo  " | <a href=\"articolo.php?id=$art_id\">Leggi tutto</a>"; 
   
                             // mostriamo il numero di commenti relativi ad ogni articolo
                             $conta = "SELECT COUNT(com_id) as conta from commenti WHERE com_art = '$art_id'";
                             $conto = @mysql_query ($conta);
                             $tot = @mysql_fetch_array ($conto);
                             echo $sum2 = $tot['conta'];
-                            echo "<hr>";
+                            echo "<br /><br />";
                         } 
                     }else{
                         // se in tabella non ci sono records...

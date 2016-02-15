@@ -2,7 +2,7 @@
     session_start();
     if(isset($_SESSION['username'])==0) {
         $_SESSION['username']="GUEST";
-        $_SESSION['newser']="0";   
+        $_SESSION['newser']=FALSE;
     }
 
     //Connessione MySQL
@@ -18,5 +18,4 @@
         print("Connessione al database fallita");
         exit;  
     }
-	
 ?>

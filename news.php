@@ -26,15 +26,12 @@
             <div id="body">
                 <div id="contenuto">
 <?php
-    if($_SESSION['newser']=="1"){
+    if($_SESSION['newser']==TRUE){
         ?>
     <h1>Inserisci un articolo</h1>
     <?php
         //valorizziamo le variabili con i dati ricevuti dal form
-        if(isset($_POST['submit'])){
-            if(isset($_POST['autore'])){
-            $username = addslashes($_POST['username']);
-            }
+    if(isset($_POST['submit'])){
         if(isset($_POST['titolo'])){
             $titolo = addslashes($_POST['titolo']);
         }
@@ -43,12 +40,13 @@
         }
 
         // popoliamo i campi della tabella articoli con i dati ricevuti dal form
+        $username = $_SESSION['username'];
         $sql = "INSERT INTO tbl_articoli (art_autore, art_titolo, art_articolo, art_data) VALUES ('$username', '$titolo', '$articolo', now())";
 
         // se l'inserimento ha avuto successo inviamo una notifica
         if (@mysql_query($sql) or die (mysql_error())){
-            echo "Articolo inserito con successo";
-        } 
+            echo "Articolo inserito con successo"; 
+        }
         }else{
             // se non sono stati inviati dati dal form mostriamo il modulo per l'inserimento
         ?>

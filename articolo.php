@@ -22,6 +22,7 @@
             </ul>
         </div>
         <div id="body">
+            <div id="contenuto">
             <?php
                 // controlliamo che sia stato inviato un id numerico alla pagina
                 if(isset($_GET['id'])&&(is_numeric($_GET['id']))){
@@ -29,7 +30,7 @@
                     $art_id = $_GET['id'];
                 
                     // selezioniamo dalla tabella i dati relativi all'articolo
-                    $sql = "SELECT art_autore,art_titolo,art_data,art_articolo FROM articoli WHERE art_id='$art_id'";
+                    $sql = "SELECT art_autore,art_titolo,art_data,art_articolo FROM tbl_articoli WHERE art_id='$art_id'";
                     $query = mysql_query($sql) or die (mysql_error());
                 
                     // se per quell'id esiste un articolo..
@@ -49,7 +50,7 @@
                         echo "<br><a href=\"insert_comment.php?id=$art_id\">Invia un commento</a><br><br>";
 
                         // visualizzianmo tutti i commenti
-                        $sql_com = "SELECT com_autore, com_testo FROM commenti WHERE com_art='$art_id'";
+                        $sql_com = "SELECT com_autore, com_testo FROM tbl_commenti WHERE com_art='$art_id'";
                         $query_com = mysql_query($sql_com) or die (mysql_error());
                         if(mysql_num_rows($query_com) > 0){
                             echo "Commenti:<br>";
@@ -58,7 +59,7 @@
                                 $com_testo = stripslashes($row_com['com_testo']);
                                 echo $com_testo . "<br>";
                                 echo "Inserito da <b>". $com_autore . "</b>";
-                                echo "<hr>"; 
+                                echo "<br /><br />"; 
                             }
                         }
                     }
@@ -67,7 +68,7 @@
                     echo "<br />Nessun articolo trovato.";
                 }
             ?>	
-        </div>
+            </div></div>
     <div id="push"></div>
             
         </div>  
