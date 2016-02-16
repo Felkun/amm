@@ -44,13 +44,86 @@
                     </div>
                     <br />
                     <div align="center">
-                        <p><h4>Screenshot</h4></p>
-                        <div class="fadein" id="blueborder">
+                        <p><h4>Gallery</h4></p>
+                        <div class="fadein">
                             <img src="media/screenshot/mprime_01.jpg" />
                             <img src="media/screenshot/mprime_02.jpg" />
                             <img src="media/screenshot/mprime_03.jpg" />
                             <img src="media/screenshot/mprime_04.jpg" />
                             <img src="media/screenshot/mprime_05.jpg" />
+                            <br /><br />
+                            <center><img src="media/prime_logo.png"/></center>
+                        <img src="media/orpheon.jpg" style="float:left;" id="blueborder" /><div>Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
+                        <div>Tracciata l'esatta posizione di una delle loro fortezze volanti, localizzandola nell'orbita del pianeta Tallon IV, Samus ci si reca per scoprire i piani dei Pirati.</div>
+                        <div>All'interno della fregata spaziale Orpheon Samus scopre che una Parassita Regina, una creatura mutante modificata geneticamente, si è liberata e ha danneggiato la maggior parte della stazione, uccidendo anche i pirati all'interno.</div>
+                        <div>Samus ne trova un'altra rinchiusa, viva e dal comportamento violento. La uccide, ma questa finisce nel reattore della stazione, causandone l'esplosione.</div>
+                        <div>Fuggendo dalla stazione spaziale Samus incontra una copia meccanica di Ridley, la sua nemesi e capo dei Pirati Spaziali, che fugge su Tallon IV prima dell'esplosione della fregata.</div>
+                        <div>Decisa di non farla passare liscia ai Pirati Samus decide di inseguire Ridley. La cacciatrice atterra sul pianeta e comincia l'esplorazione.</div>
+                    </div>
+                    <br />
+                    <div align="center">
+                        <p><h4>Gallery</h4></p>
+                        <div class="fadein">
+                            <img src="media/screenshot/mprime_01.jpg" />
+                            <img src="media/screenshot/mprime_02.jpg" />
+                            <img src="media/screenshot/mprime_03.jpg" />
+                            <img src="media/screenshot/mprime_04.jpg" />
+                            <img src="media/screenshot/mprime_05.jpg" />
+                            <br /><br />
+                            <center><img src="media/prime_logo.png"/></center>
+                        <img src="media/orpheon.jpg" style="float:left;" id="blueborder" /><div>Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
+                        <div>Tracciata l'esatta posizione di una delle loro fortezze volanti, localizzandola nell'orbita del pianeta Tallon IV, Samus ci si reca per scoprire i piani dei Pirati.</div>
+                        <div>All'interno della fregata spaziale Orpheon Samus scopre che una Parassita Regina, una creatura mutante modificata geneticamente, si è liberata e ha danneggiato la maggior parte della stazione, uccidendo anche i pirati all'interno.</div>
+                        <div>Samus ne trova un'altra rinchiusa, viva e dal comportamento violento. La uccide, ma questa finisce nel reattore della stazione, causandone l'esplosione.</div>
+                        <div>Fuggendo dalla stazione spaziale Samus incontra una copia meccanica di Ridley, la sua nemesi e capo dei Pirati Spaziali, che fugge su Tallon IV prima dell'esplosione della fregata.</div>
+                        <div>Decisa di non farla passare liscia ai Pirati Samus decide di inseguire Ridley. La cacciatrice atterra sul pianeta e comincia l'esplorazione.</div>
+                    </div>
+                    <br />
+                    <div align="center">
+                        <p><h4>Gallery</h4></p>
+                        <div class="fadein">
+                            <img src="media/screenshot/mprime_01.jpg" />
+                            <img src="media/screenshot/mprime_02.jpg" />
+                            <img src="media/screenshot/mprime_03.jpg" />
+                            <img src="media/screenshot/mprime_04.jpg" />
+                            <img src="media/screenshot/mprime_05.jpg" />
+                            <br /><br />
+                            <center><img src="media/prime_logo.png"/></center>
+                        <img src="media/orpheon.jpg" style="float:left;" id="blueborder" /><div>Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
+                        <div>Tracciata l'esatta posizione di una delle loro fortezze volanti, localizzandola nell'orbita del pianeta Tallon IV, Samus ci si reca per scoprire i piani dei Pirati.</div>
+                        <div>All'interno della fregata spaziale Orpheon Samus scopre che una Parassita Regina, una creatura mutante modificata geneticamente, si è liberata e ha danneggiato la maggior parte della stazione, uccidendo anche i pirati all'interno.</div>
+                        <div>Samus ne trova un'altra rinchiusa, viva e dal comportamento violento. La uccide, ma questa finisce nel reattore della stazione, causandone l'esplosione.</div>
+                        <div>Fuggendo dalla stazione spaziale Samus incontra una copia meccanica di Ridley, la sua nemesi e capo dei Pirati Spaziali, che fugge su Tallon IV prima dell'esplosione della fregata.</div>
+                        <div>Decisa di non farla passare liscia ai Pirati Samus decide di inseguire Ridley. La cacciatrice atterra sul pianeta e comincia l'esplorazione.</div>
+                    </div>
+                    <br />
+                    <div align="center">
+                        <p><h4>Gallery</h4></p>
+                        <div class="fadein">
+                            <img src="media/screenshot/mprime_01.jpg" />
+                            <img src="media/screenshot/mprime_02.jpg" />
+                            <img src="media/screenshot/mprime_03.jpg" />
+                            <img src="media/screenshot/mprime_04.jpg" />
+                            <img src="media/screenshot/mprime_05.jpg" />
+                            <br /><br />
+                            <center><img src="media/prime_logo.png"/></center>
+                        <img src="media/orpheon.jpg" style="float:left;" id="blueborder" /><div>Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
+                        <div>Tracciata l'esatta posizione di una delle loro fortezze volanti, localizzandola nell'orbita del pianeta Tallon IV, Samus ci si reca per scoprire i piani dei Pirati.</div>
+                        <div>All'interno della fregata spaziale Orpheon Samus scopre che una Parassita Regina, una creatura mutante modificata geneticamente, si è liberata e ha danneggiato la maggior parte della stazione, uccidendo anche i pirati all'interno.</div>
+                        <div>Samus ne trova un'altra rinchiusa, viva e dal comportamento violento. La uccide, ma questa finisce nel reattore della stazione, causandone l'esplosione.</div>
+                        <div>Fuggendo dalla stazione spaziale Samus incontra una copia meccanica di Ridley, la sua nemesi e capo dei Pirati Spaziali, che fugge su Tallon IV prima dell'esplosione della fregata.</div>
+                        <div>Decisa di non farla passare liscia ai Pirati Samus decide di inseguire Ridley. La cacciatrice atterra sul pianeta e comincia l'esplorazione.</div>
+                    </div>
+                    <br />
+                    <div align="center">
+                        <p><h4>Gallery</h4></p>
+                        <div class="fadein">
+                            <img src="media/screenshot/mprime_01.jpg" />
+                            <img src="media/screenshot/mprime_02.jpg" />
+                            <img src="media/screenshot/mprime_03.jpg" />
+                            <img src="media/screenshot/mprime_04.jpg" />
+                            <img src="media/screenshot/mprime_05.jpg" />
+                            <br /><br />
                         </div>
                         <br />
                     </div>
