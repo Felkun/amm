@@ -96,7 +96,8 @@
             <div id="push"></div>
             
         </div>  
-    <div id="footer">
-        <div><center>Copyright &#169; 2002-2016 Nintendo</center></div>
-    </div>
+        <div id="footer">
+            <div><center>Copyright &#169; 2002-2016 Nintendo</center></div>
+        </div>
+    </body>
 </html>
