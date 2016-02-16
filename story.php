@@ -1,7 +1,3 @@
-<!-- Connessione al database -->
-<?php
-    //include("connect.php");
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -51,6 +47,7 @@
                             <img src="media/screenshot/mprime_03.jpg" />
                             <img src="media/screenshot/mprime_04.jpg" />
                             <img src="media/screenshot/mprime_05.jpg" />
+						</div>
                             <br /><br />
                             <center><img src="media/prime_logo.png"/></center>
                         <img src="media/orpheon.jpg" style="float:left;" id="blueborder" /><div>Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
@@ -69,6 +66,7 @@
                             <img src="media/screenshot/mprime_03.jpg" />
                             <img src="media/screenshot/mprime_04.jpg" />
                             <img src="media/screenshot/mprime_05.jpg" />
+						</div>
                             <br /><br />
                             <center><img src="media/prime_logo.png"/></center>
                         <img src="media/orpheon.jpg" style="float:left;" id="blueborder" /><div>Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
@@ -87,6 +85,7 @@
                             <img src="media/screenshot/mprime_03.jpg" />
                             <img src="media/screenshot/mprime_04.jpg" />
                             <img src="media/screenshot/mprime_05.jpg" />
+						</div>
                             <br /><br />
                             <center><img src="media/prime_logo.png"/></center>
                         <img src="media/orpheon.jpg" style="float:left;" id="blueborder" /><div>Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
@@ -105,6 +104,7 @@
                             <img src="media/screenshot/mprime_03.jpg" />
                             <img src="media/screenshot/mprime_04.jpg" />
                             <img src="media/screenshot/mprime_05.jpg" />
+						</div>
                             <br /><br />
                             <center><img src="media/prime_logo.png"/></center>
                         <img src="media/orpheon.jpg" style="float:left;" id="blueborder" /><div>Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
@@ -123,6 +123,7 @@
                             <img src="media/screenshot/mprime_03.jpg" />
                             <img src="media/screenshot/mprime_04.jpg" />
                             <img src="media/screenshot/mprime_05.jpg" />
+						</div>
                             <br /><br />
                         </div>
                         <br />
