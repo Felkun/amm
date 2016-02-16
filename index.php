@@ -49,7 +49,7 @@
                 <?php
                     require("preview.php");
                     // estraiamo i dati relativi agli articoli dalla tabella
-                    $sql = "SELECT * FROM tbl_articoli ORDER BY art_data DESC";
+                    $sql = "SELECT * FROM tbl_articoli ORDER BY art_data DESC, art_id DESC";
                     $query = @mysql_query($sql) or die (mysql_error());
                     
                     //verifichiamo che siano presenti records
