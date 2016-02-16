@@ -1,53 +1,37 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>JQuery PowerPoint</title>
-<style type="text/css">
-ul.ppt {
-	position: relative;
-}
+<html>
+    <head>
+        <title>Example</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script  type="text/javascript">
+            $(document).ready(function() {
+                // assegno un evento sulla pressione di uno qualsiasi dei link del menù
+                $('.sidebar a').click(function(e) {
+                    // prevengo il funzionamento normale del browser che mi rimanderebbe all'url del link
+                    e.preventDefault();
+                    // effettuo invece una richiesta in ajax grazie a quella url
+                    $.get($(this).attr('href')).done(function(data) {
+                        // in caso di riuscita scrivo il responso nel div main
+                        $('.main').html(data);
+                    });
+                });
+            });
 
-.ppt li {
-	list-style-type: none;
-	position: absolute;
-}
+        </script>
+        </style>
+    <body>
+            <p align=center>
+                <a href="#">Menu principale: </a>
+            </p>
+            <!-- l'attributo alt per le immagini è obbligatorio  -->
+            <!-- non puoi assegnare lo stesso id a piu di un elemento nella stessa pagina  -->
+            &raquo; <img src="Home.png" class="immaginimenu" alt="home"/>   
+            <a href="index.php">Home</a> 
+            <br/><br/>
+            &raquo;   <img src="albergo.gif"  class="immaginimenu" alt="albergo">   
+            <a href="story.php">Alberghi</a>
+        </div>
+        <div class="main">
 
-.ppt img {
-	border: 1px solid #e7e7e7;
-	padding: 5px;
-	background-color: #ececec;
-        
-}
-</style>
-</head>
-<body>
-    <center>
-<ul class="ppt">
-	<li><img src="media/screenshot/mprime_01.jpg" alt="Ethernet Cable"></img></li>
-	<li><img src="glasses.jpg" alt="Spectacles"></img></li>
-	<li><img src="pisa.jpg" alt="Leaning Tower of Pisa"></img></li>
-</ul>
-    </center>
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript">
-$('.ppt li:gt(0)').hide();
-$('.ppt li:last').addClass('last');
-var cur = $('.ppt li:first');
-
-function animate() {
-	cur.fadeOut( 1000 );
-	if ( cur.attr('class') == 'last' )
-		cur = $('.ppt li:first');
-	else
-		cur = cur.next();
-	cur.fadeIn( 1000 );
-}
-
-$(function() {
-	setInterval( "animate()", 5000 );
-} );
-</script>
-</body>
-</html>
+        </div>
+    </body>
+<!--</html>-->
