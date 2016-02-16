@@ -45,7 +45,7 @@
                     <br />
                     <div align="center">
                         <p><h4>Screenshot</h4></p>
-                        <div class="fadein">
+                        <div class="fadein" id="blueborder">
                             <img src="media/screenshot/mprime_01.jpg" />
                             <img src="media/screenshot/mprime_02.jpg" />
                             <img src="media/screenshot/mprime_03.jpg" />
