@@ -22,28 +22,39 @@
             </ul>
         </div>
         <div id="body">
-<?php
-    print("<FORM ACTION=\"login_form.php\" METHOD=\"POST\">");		
-    print("<ul style=\"list-style: none;\">");
-    print("<li>Username</li>");
-    print("<li><INPUT TYPE=\"Text\" NAME=\"username\"></li>");
-    print("<li>Password</li>");
-    print("<li><INPUT TYPE=\"Password\" NAME=\"password\"></li>");
-    print("<br />");
-    print("<li><INPUT id=\"pulsante\" TYPE=Submit VALUE=\"Log In\"></li>");
-    print("<br />");
-    print("<li>Non sei registrato? <a href=\"registrazione.php\">Registrati!</a></li>");
-    if(isset($_SESSION['accessonegato'])==1) {
-        print("<li><h1>Non hai inserito dati di accesso corretti!</h1></li>");
-        unset($_SESSION['accessonegato']);
-    }
-    print("</ul>");
-    print("</FORM>");
-?>	
-</div>
-    <div id="push"></div>
+            <div id="login">
+                    <?php if($_SESSION['username']=="GUEST") {
+                        print("Benvenuto! - <a href=\"login.php\">Log-in</a>");
+                    } else {
+                        print("Bentornato ");
+                        echo$_SESSION['username'];
+                        print("! - <a href=\"logout.php\">Log-out</a>");
+                    }
+                    ?>
+            </div>
             
-        </div>  
+            <!-- Form per log-in -->
+            <?php
+                print("<FORM ACTION=\"login_form.php\" METHOD=\"POST\">");		
+                print("<ul style=\"list-style: none;\">");
+                print("<li>Username</li>");
+                print("<li><INPUT TYPE=\"Text\" NAME=\"username\"></li>");
+                print("<li>Password</li>");
+                print("<li><INPUT TYPE=\"Password\" NAME=\"password\"></li>");
+                print("<br />");
+                print("<li><INPUT id=\"pulsante\" TYPE=Submit VALUE=\"Log In\"></li>");
+                print("<br />");
+                print("<li>Non sei registrato? <a href=\"registrazione.php\">Registrati!</a></li>");
+                if(isset($_SESSION['accessonegato'])==1) {
+                    print("<li><h1>Non hai inserito dati di accesso corretti!</h1></li>");
+                    unset($_SESSION['accessonegato']);
+                }
+                print("</ul>");
+                print("</FORM>");
+            ?>	
+        </div>
+        <div id="push"></div>        
+    </div>  
     <div id="footer">
         <center><div>Copyright &#169; 2002-2016 Nintendo</div></center>
     </div>

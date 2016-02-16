@@ -1,5 +1,6 @@
 <?php
     include("connect.php");
+    
     // Controllo stringhe
     if(
         (strlen($_POST['username'])==0) ||
@@ -31,17 +32,10 @@
     }
 
     //Controllo email
-    $contatore = 0; //Contatore per il ciclo
-    $flagmail = 0; //Flag per indicare se la @ e' stata trovata nella stringa, inizializzata a 0 poiche' non trovata!
-    for ($contatore=0; $contatore <(strlen($_POST['email'])); $contatore++) { 
-	$testmail=substr($_POST['email'],$contatore,1);
-            if($testmail="@") {
-                $flagmail=1;
-            }
-    }
-    if($flagmail==0) {
-        $stringaerrore5="E-mail non valida (Non e' presente alcuna @ nella stringa)";
-    }
+    $num_at = count(explode('@', $_POST['email'])) - 1;
+	if($num_at != 1) {
+            $stringaerrore5="E-mail non valida (Non e' presente alcuna @ nella stringa)";
+	}
 
     if($_POST['email']!=$_POST['emailcheck']) {
         $stringaerrore6="E-mail non valida (il campo di conferma e-mail e' diverso dal campo e-mail)";
@@ -88,10 +82,10 @@
         $_SESSION['e7']=$stringaerrore7;
     }
     } else {
-        $sql="INSERT INTO tbl_utenti (username, password, email)
-        VALUES
-        ('$_POST[username]','$_POST[password]','$_POST[email]')";
-        $_SESSION['regriuscita']=1; //Ci indica se la registrazione e' riuscita oppure no
+        // Scrittura su database del nuovo utente
+        $sql="INSERT INTO tbl_utenti (username, password, email, newser) VALUES"
+                . "('$_POST[username]','$_POST[password]','$_POST[email]', FALSE)";
+        $_SESSION['regriuscita']=1; // Controllo effettiva registrazione
         mysql_query($sql);
     }
     header("Location: registrazione.php");
