@@ -31,7 +31,7 @@
                         print("! - <a href=\"logout.php\">Log-out</a>");
                     }
                     ?>
-            </div>
+            </div> <br />
             
             <!-- Form per log-in -->
             <?php

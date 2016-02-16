@@ -33,7 +33,7 @@
                         print("! - <a href=\"logout.php\">Log-out</a>");
                     }
                     ?>
-                </div>
+                </div><br />
                 <div id="contenuto">
                     <?php
                         // Controllo se newser
@@ -54,13 +54,13 @@
                                         . "VALUES ('$username', '$titolo', '$articolo', now())";
                                 
                                 // Controllo successo scrittura
-                                if (@mysql_query($sql) or die (mysql_error())){
+                                if (mysql_query($sql) or die (mysql_error())){
                                     echo "Articolo inserito con successo"; 
                                 }
                             } else {
                             
                                 // Form inserimento dati
-                                print("<center><form action=\"news.php\" method=\"post\">)");
+                                print("<center><form action=\"news.php\" method=\"post\">");
                                 print("Titolo:<br />");
                                 print("<input name=\"titolo\" type=\"text\" size=\"40\"><br />");
                                 print("Articolo:<br />");
@@ -72,7 +72,7 @@
                                     . "Clicca <a href=\"index.php\">QUI</a> per tornare nella homepage.</center>");
                         }
                     ?>
-                </div>
+                </div></div>
                 <div id="push"></div>
             </div>  
     <div id="footer">

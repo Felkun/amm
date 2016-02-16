@@ -31,7 +31,7 @@
                         print("! - <a href=\"logout.php\">Log-out</a>");
                     }
                     ?>
-                </div>
+            </div><br />
             <div id="contenuto">
             <?php
                 // Inserimento commento nell'articolo
