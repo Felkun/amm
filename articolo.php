@@ -16,9 +16,9 @@
             <h1 class="logo"><a href="index.php">Metroid Prime Website</a></h1>
             <ul id="menu">
                 <li><a href="index.php"><span class="menu">Home</span></a></li>
-                <li><a href="series.php"><span class="menu">La Serie</span></a></li>
+                <li><a href="series.html"><span class="menu">La Serie</span></a></li>
                 <li><a href="story.html"><span class="menu">La Storia</span></a></li>
-                <li><a href="gameplay.php"><span class="menu">Gameplay</span></a></li>
+                <li><a href="gameplay.html"><span class="menu">Gameplay</span></a></li>
             </ul>
         </div>
         <div id="body">
@@ -39,36 +39,36 @@
                     if(isset($_GET['id'])&&(is_numeric($_GET['id']))){
                     
                         // Lettura dati articolo
-                        $art_id = $_GET['id'];
-                        $sql = "SELECT art_autore,art_titolo,art_data,art_articolo FROM tbl_articoli WHERE art_id='$art_id'";
+                        $id = $_GET['id'];
+                        $sql = "SELECT art_autore,art_titolo,art_data,art_articolo FROM tbl_articoli WHERE art_id='$id'";
                         $query = mysql_query($sql) or die (mysql_error());
                 
                         if(mysql_num_rows($query) > 0){
                             // Mostra articolo su schermo
-                            $row = mysql_fetch_array($query) or die (mysql_error());
-                            $autore = stripslashes($row['art_autore']);
-                            $titolo = stripslashes($row['art_titolo']);
-                            $data = $row['art_data'];
-                            $articolo = stripslashes($row['art_articolo']);
+                            $riga = mysql_fetch_array($query) or die (mysql_error());
+                            $autore = stripslashes($riga['art_autore']);
+                            $titolo = stripslashes($riga['art_titolo']);
+                            $data = $riga['art_data'];
+                            $articolo = stripslashes($riga['art_articolo']);
                             echo "<h2>".$titolo."</h2>" . $articolo . "<br /><br />";
                             $data = preg_replace('/^(.{4})-(.{2})-(.{2})$/','$3-$2-$1', $data);
                             echo "Scritto da <b>". $autore . "</b>";
                             echo " | Articolo postato il <b>" . $data . "</b>"; 
   
                             // Link inserimento commenti  
-                            echo "<br /><a href=\"insert_comment.php?id=$art_id\">Invia un commento</a><br /><br />";
+                            echo "<br /><a href=\"insert_comment.php?id=$id\">Invia un commento</a><br /><br />";
 
                             // Commenti articolo
-                            $sql_com = "SELECT com_autore, com_testo FROM tbl_commenti WHERE com_art='$art_id'";
-                            $query_com = mysql_query($sql_com) or die (mysql_error());
-                            if(mysql_num_rows($query_com) > 0){
+                            $sql_comm = "SELECT com_autore, com_testo FROM tbl_commenti WHERE com_art='$id'";
+                            $query_comm = mysql_query($sql_comm) or die (mysql_error());
+                            if(mysql_num_rows($query_comm) > 0){
                                 echo "Commenti:<br />";
-                                while($row_com = mysql_fetch_array($query_com)){
-                                    $com_autore = stripslashes($row_com['com_autore']);
-                                    $com_testo = stripslashes($row_com['com_testo']);
-                                    echo $com_testo . "<br />";
-                                    echo "Inserito da <b>". $com_autore . "</b>";
-                                    echo "<br /><br />"; 
+                                while($row_comm = mysql_fetch_array($query_comm)){
+                                    $comm_autore = stripslashes($row_comm['com_autore']);
+                                    $comm_testo = stripslashes($row_comm['com_testo']);
+                                    echo $comm_testo . "<br />";
+                                    echo "Inserito da <b>". $comm_autore . "</b>";
+                                    echo "<br /><br />";
                                 }
                             }
                         }
@@ -82,7 +82,7 @@
             
         </div>  
     <div id="footer">
-        <center><div>Copyright &#169; 2002-2016 Nintendo</div></center>
+        Copyright &#169; 2002-2016 Nintendo
     </div>
 </body>
 </html>

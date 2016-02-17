@@ -16,9 +16,9 @@
             <h1 class="logo"><a href="index.php">Metroid Prime Website</a></h1>
             <ul id="menu">
                 <li><a href="index.php"><span class="menu">Home</span></a></li>
-                <li><a href="series.php"><span class="menu">La Serie</span></a></li>
+                <li><a href="series.html"><span class="menu">La Serie</span></a></li>
                 <li><a href="story.html"><span class="menu">La Storia</span></a></li>
-                <li><a href="gameplay.php"><span class="menu">Gameplay</span></a></li>
+                <li><a href="gameplay.html"><span class="menu">Gameplay</span></a></li>
             </ul>
         </div>
         <div id="body">
@@ -89,7 +89,7 @@
             
         </div>  
     <div id="footer">
-        <center><div>Copyright &#169; 2002-2016 Nintendo</div></center>
+        Copyright &#169; 2002-2016 Nintendo
     </div>
 </body>
 </html>

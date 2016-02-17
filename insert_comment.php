@@ -16,9 +16,9 @@
             <h1 class="logo"><a href="index.php">Metroid Prime Website</a></h1>
             <ul id="menu">
                 <li><a href="index.php"><span class="menu">Home</span></a></li>
-                <li><a href="series.php"><span class="menu">La Serie</span></a></li>
+                <li><a href="series.html"><span class="menu">La Serie</span></a></li>
                 <li><a href="story.html"><span class="menu">La Storia</span></a></li>
-                <li><a href="gameplay.php"><span class="menu">Gameplay</span></a></li>
+                <li><a href="gameplay.html"><span class="menu">Gameplay</span></a></li>
             </ul>
         </div>
         <div id="body">
@@ -40,12 +40,12 @@
                         $testo = addslashes($_POST['testo']);
                     }
                     if(isset($_POST['id'])){
-                        $com_art = addslashes($_POST['id']);
+                        $comm_art = addslashes($_POST['id']);
                     }
 
                     // Scrittura commento articolo su database
                     $username=$_SESSION['username'];
-                    $sql = "INSERT INTO tbl_commenti (com_autore, com_testo, com_art) VALUES ('$username', '$testo', '$com_art')";
+                    $sql = "INSERT INTO tbl_commenti (com_autore, com_testo, com_art) VALUES ('$username', '$testo', '$comm_art')";
   
                     // Conferma inserimento commento
                     if (mysql_query($sql) or die (mysql_error())){
@@ -54,8 +54,8 @@
                 }else{
                     // Controllo esistenza articolo
                     if(isset($_GET['id'])&&(is_numeric($_GET['id']))){
-                        $com_art = addslashes($_GET['id']);
-                        $sql = "SELECT art_id FROM tbl_articoli WHERE art_id='$com_art'";
+                        $comm_art = addslashes($_GET['id']);
+                        $sql = "SELECT art_id FROM tbl_articoli WHERE art_id='$comm_art'";
                         $query = mysql_query($sql) or die (mysql_error());
                         if(mysql_num_rows($query) > 0){
                             
@@ -63,7 +63,7 @@
                             print("<form action=\"insert_comment.php\" method=\"post\">");
                             print("<br />Testo:<br />");
                             print("<textarea name=\"testo\" cols=\"50\" rows=\"15\"></textarea><br \>");
-                            print("<input name=\"id\" type=\"hidden\" value=\"<? echo $com_art; ?>\">");
+                            print("<input name=\"id\" type=\"hidden\" value=\"<? echo $comm_art; ?>\">");
                             print("<input name=\"submit\" type=\"submit\" value=\"Invia\"> </form>");
                         
                         }else{
@@ -80,7 +80,7 @@
             
         </div>  
     <div id="footer">
-        <center><div>Copyright &#169; 2002-2016 Nintendo</div></center>
+        Copyright &#169; 2002-2016 Nintendo
     </div>
 </body>
 </html>

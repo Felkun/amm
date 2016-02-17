@@ -17,9 +17,9 @@
                 <h1 class="logo"><a href="index.php">Metroid Prime Website</a></h1>
                 <ul id="menu">
                     <li><a class="active" href="index.php"><span class="menu">Home</span></a></li>
-                    <li><a href="series.php"><span class="menu">La Serie</span></a></li>
+                    <li><a href="series.html"><span class="menu">La Serie</span></a></li>
                     <li><a href="story.html"><span class="menu">La Storia</span></a></li>
-                    <li><a href="gameplay.php"><span class="menu">Gameplay</span></a></li>
+                    <li><a href="gameplay.html"><span class="menu">Gameplay</span></a></li>
                 </ul>
             </div>
             <div id="body">
@@ -55,12 +55,12 @@
                     //verifichiamo che siano presenti records
                     if(mysql_num_rows($query) > 0){
                         // se la tabella contiene records mostriamo tutti gli articoli attraverso un ciclo
-                        while($row = mysql_fetch_array($query)){
-                            $art_id = $row['art_id'];
-                            $autore = stripslashes($row['art_autore']);
-                            $titolo = stripslashes($row['art_titolo']);
-                            $data = $row['art_data'];
-                            $articolo = stripslashes($row['art_articolo']);
+                        while($riga = mysql_fetch_array($query)){
+                            $id = $riga['art_id'];
+                            $autore = stripslashes($riga['art_autore']);
+                            $titolo = stripslashes($riga['art_titolo']);
+                            $data = $riga['art_data'];
+                            $articolo = stripslashes($riga['art_articolo']);
    
                             //valorizziamo una variabili con il link all'intero articolo
                             $continua = "...";
@@ -77,10 +77,10 @@
                             // stampiamo una serie di informazioni
                             echo  "Scritto da <b>". $autore . "</b>";
                             echo  " | Articolo postato il <b>" . $data . "</b>";
-                            echo  " | <a href=\"articolo.php?id=$art_id\">Leggi tutto</a>"; 
+                            echo  " | <a href=\"articolo.php?id=$id\">Leggi tutto</a>"; 
   
                             // mostriamo il numero di commenti relativi ad ogni articolo
-                            $conta = "SELECT COUNT(com_id) as conta from commenti WHERE com_art = '$art_id'";
+                            $conta = "SELECT COUNT(com_id) as conta from commenti WHERE com_art = '$id'";
                             $conto = @mysql_query ($conta);
                             $tot = @mysql_fetch_array ($conto);
                             echo $sum2 = $tot['conta'];
@@ -97,7 +97,7 @@
             
         </div>  
         <div id="footer">
-            <div><center>Copyright &#169; 2002-2016 Nintendo</center></div>
+            Copyright &#169; 2002-2016 Nintendo
         </div>
     </body>
 </html>
