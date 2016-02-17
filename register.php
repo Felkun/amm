@@ -9,7 +9,7 @@
         (strlen($_POST['email'])==0) ||
         (strlen($_POST['emailcheck'])==0)
     ) {
-        $stringaerrore1="Controlla il form dei dati! C'e' qualche errore! (Manca almeno un elemento...)"; 
+        $stringaerrore1="Controlla il form dei dati, è presente qualche errore (manca almeno un elemento)"; 
     }
     
     //Controllo username
@@ -28,7 +28,7 @@
         $stringaerrore3="Password non valida (da 6 a 20 caratteri)";
     }
     if($_POST['password']!=$_POST['passwordcheck']) {
-        $stringaerrore4="Password non valida (il campo di conferma password e' diverso dal campo password)";
+        $stringaerrore4="Password non valida (il campo di conferma password è diverso dal campo password)";
     }
 
     //Controllo email
@@ -38,7 +38,7 @@
 	}
 
     if($_POST['email']!=$_POST['emailcheck']) {
-        $stringaerrore6="E-mail non valida (il campo di conferma e-mail e' diverso dal campo e-mail)";
+        $stringaerrore6="E-mail non valida (il campo di conferma e-mail è diverso dal campo e-mail)";
     }
     
     //Controllo avanzato
