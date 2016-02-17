@@ -8,12 +8,29 @@
     height:     380px;
     width:      480px;
     margin:     0 auto;
-    
     clear:      both;
     
 }
 
 .fadein img {
+    position:   absolute;
+    left:       10px;
+    top:        10px;
+    border:     1px solid #003366;
+    max-height: 380px;
+    max-width:  480px;
+}
+
+.fadeinds { 
+    position:   relative;
+    height:     384px;
+    width:      256px;
+    margin:     0 auto;
+    clear:      both;
+    
+}
+
+.fadeinds img {
     position: absolute;
     left:     10px;
     top:      10px;
@@ -43,12 +60,6 @@
     background: url('../media/act_submenu.png') no-repeat;
 }
 
-#centeredmenu {
-   float:left;
-   width:100%;
-   overflow:hidden;
-   position:relative;
-}
 #submenu ul {
    clear:left;
    float:left;
@@ -67,23 +78,4 @@
    padding:0;
    position:relative;
    right:50%;
-}
-#centeredmenu ul li a {
-   display:block;
-   margin:0 0 0 1px;
-   padding:3px 10px;
-   background:#ddd;
-   color:#000;
-   text-decoration:none;
-   line-height:1.3em;
-}
-#centeredmenu ul li a:hover {
-   background:#369;
-   color:#fff;
-}
-#centeredmenu ul li a.active,
-#centeredmenu ul li a.active:hover {
-   color:#fff;
-   background:#000;
-   font-weight:bold;
 }

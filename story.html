@@ -8,12 +8,7 @@
         <link rel="shortcut icon" href="favicon.ico" />
         <title>Metroid Prime - Storia</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script>
-            $(function(){
-                $('.fadein img:gt(0)').hide();
-                setInterval(function(){$('.fadein > :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 4000);
-            });
-        </script>
+        <script src="js/slideshow.js"></script>
     </head>
     <body>
         <div id="container">
@@ -32,15 +27,15 @@
                         <li><a class="active" href="story.html"><span class="menu">Metroid Prime</span></a></li>
                         <li><a href="story_hunters.html"><span class="menu">Metroid Prime Hunters</span></a></li>
                         <li><a href="story_echoes.html"><span class="menu">Metroid Prime 2: Echoes</span></a></li>
-                        <li><a href="story_corruption.htmlphp"><span class="menu">Metroid Prime 3: Corruption</span></a></li>
+                        <li><a href="story_corruption.html"><span class="menu">Metroid Prime 3: Corruption</span></a></li>
                     </ul>
                 </div>
                 <br /><br />
                 <div id="contenuto" align="left">
                     <div id="position" style="text-align: justify;">
-                        <center><img src="media/prime_logo.png"/></center>
+                        <center><img src="media/prime_logo.png" height="225px"/></center>
                         <div style="float:left; width:40%;"><img src="media/orpheon.jpg" style="width:90%;" id="blueborder" /></div>
-                        <div style="width: 60%; float: right;";><div>  Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
+                        <div style="width: 60%; float: right;";><div>Durante un viaggio sulla sua navetta spaziale, Samus Aran riceve un SOS da parte di un vascello dei Pirati Spaziali.</div>
                         <div>Tracciata l'esatta posizione di una delle loro fortezze volanti, localizzandola nell'orbita del pianeta Tallon IV, Samus ci si reca per scoprire i piani dei Pirati.</div>
                         <div>All'interno della fregata spaziale Orpheon Samus scopre che una Parassita Regina, una creatura mutante modificata geneticamente, si è liberata e ha danneggiato la maggior parte della stazione, uccidendo anche i pirati all'interno.</div>
                         <div>Samus ne trova un'altra rinchiusa, viva e dal comportamento violento. La uccide, ma questa finisce nel reattore della stazione, causandone l'esplosione.</div>
@@ -49,7 +44,7 @@
                     </div>
                     <br />
                     <div align="center">
-                        <p><h4>Screenshot</h4></p>
+                        <h4>Screenshot</h4>
                         <div class="fadein">
                             <img src="media/screenshot/mprime_01.jpg" />
                             <img src="media/screenshot/mprime_02.jpg" />
@@ -61,7 +56,6 @@
                     </div>
                 </div>
             </div>
-        </div>
             <div id="push"></div>
         </div>
         <div id="footer">
