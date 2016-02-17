@@ -14,7 +14,11 @@
     <body>
         <div id="container">
             <div id="header">
+                
+                // Logo sito
                 <h1 class="logo"><a href="index.php">Metroid Prime Website</a></h1>
+                
+                // Menù di navigazione
                 <ul id="menu">
                     <li><a class="active" href="index.php"><span class="menu">Home</span></a></li>
                     <li><a href="series.html"><span class="menu">La Serie</span></a></li>
@@ -23,12 +27,16 @@
                 </ul>
             </div>
             <div id="body">
+                
+                <!-- Menù di accesso news -->
                 <div id="news">
                     <?php if($_SESSION['newser']==TRUE) {
                         print("<a style=\"float: right;\" href=\"news.php\">Area News</a>");
                     }
                     ?>
                 </div>
+                
+                <!-- Menù di accesso registrazione/log-in -->
                 <div id="login">
                     <?php if($_SESSION['username']=="GUEST") {
                         print("Benvenuto! - <a href=\"login.php\">Log-in</a>");
@@ -48,13 +56,13 @@
                         </center></div>
                 <?php
                     require("preview.php");
-                    // estraiamo i dati relativi agli articoli dalla tabella
+                    // Lettura news da database
                     $sql = "SELECT * FROM tbl_articoli ORDER BY art_data DESC, art_id DESC";
                     $query = @mysql_query($sql) or die (mysql_error());
                     
-                    //verifichiamo che siano presenti records
+                    // Controllo dati news
                     if(mysql_num_rows($query) > 0){
-                        // se la tabella contiene records mostriamo tutti gli articoli attraverso un ciclo
+                        // Visualizzazione articoli
                         while($riga = mysql_fetch_array($query)){
                             $id = $riga['art_id'];
                             $autore = stripslashes($riga['art_autore']);
@@ -62,7 +70,7 @@
                             $data = $riga['art_data'];
                             $articolo = stripslashes($riga['art_articolo']);
    
-                            //valorizziamo una variabili con il link all'intero articolo
+                            // Se articolo troppo lungo variabile per i punti di sospensione
                             $continua = "...";
 
                             echo "<h2>".$titolo."</h2>";
@@ -71,23 +79,17 @@
                             echo preview($articolo, 40, $continua); 
                             echo "<br /><br />";
    
-                            // formattiamo la data nel formato europeo
+                            // Formattazione data
                             $data = preg_replace('/^(.{4})-(.{2})-(.{2})$/','$3-$2-$1', $data);
 
-                            // stampiamo una serie di informazioni
+                            // Stampa su video informazioni news ed accesso a news completa e commenti
                             echo  "Scritto da <b>". $autore . "</b>";
                             echo  " | Articolo postato il <b>" . $data . "</b>";
                             echo  " | <a href=\"articolo.php?id=$id\">Leggi tutto</a>"; 
-  
-                            // mostriamo il numero di commenti relativi ad ogni articolo
-                            $conta = "SELECT COUNT(com_id) as conta from commenti WHERE com_art = '$id'";
-                            $conto = @mysql_query ($conta);
-                            $tot = @mysql_fetch_array ($conto);
-                            echo $sum2 = $tot['conta'];
                             echo "<br /><br />";
                         } 
                     }else{
-                        // se in tabella non ci sono records...
+                        // Se sprovvisto di news
                         echo "Nessun articolo presente.";
                     }
                 ?>
